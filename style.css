@@ -1,0 +1,361 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: #10021D;
+    color:whitesmoke;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    user-select: none;
+    padding-bottom: 15px;
+        color:#D4D8FF;
+
+}
+.headerDiv,.footerDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #000;
+    height:70px;
+    width: 100vw;
+    background-color:#000;
+    border-bottom: 4px solid  hsla(268, 98%, 61%, 0.75);
+    z-index: 2;
+}
+.footerDiv{
+    bottom: 0;
+    border: none;
+    border-top: 4px solid  hsla(268, 98%, 61%, 0.75);
+    opacity: 1;
+    position: sticky;
+
+    
+}
+.headerDiv{
+    top: 0;
+}
+.movieCardDiv,.endCardDiv{
+    width: 240px;
+    height: 190px;
+    background: hsla(268, 100%, 61%, 0.17);
+    
+    border-radius:10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+.movieImgDiv{
+    width: 50%;
+    height:100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    flex-shrink: 0;
+    
+}
+.watchBtn{
+    width:80px;
+    height: 35px;
+    color:whitesmoke ;
+    background-color: #6202CF;
+    border: none;
+    border-radius: 5px;
+    margin-top: 80%;
+    cursor:pointer;
+    transition: .23s;
+    font-family: "Poppins", sans-serif;
+    font-weight: 990;
+    
+}
+.watchBtn:hover{
+    background-color: hsla(268, 100%, 65%, 1);
+    border-left: 5.5px solid yellow;
+    
+}
+.movieGenreTxt{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 10px;
+    opacity: .7;
+}
+.movieInfoDiv{
+    margin-left:10px;
+    display: flex;
+    align-items: space-evenly;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+    word-break: break-all;
+}
+.sectionCardsDiv{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+    white-space: nowrap;
+    padding-left: 0;
+    width: 100%;
+}
+
+    .movieNameTxt {
+    max-width: calc(100% - 50px);  
+    flex-shrink: 1;
+    font-size: 13px;
+    word-wrap: break-word;
+}
+.sectionDiv{
+    padding:10px 5px;
+    margin-bottom: 35px;
+
+}
+.ytImg{
+    width:20px;
+    height:20px;
+}
+.trailerBtnUC{
+    border: none;
+    border-radius: 5px;
+    width:80px;
+    height:26px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    color:#ff0000;
+    background: hsla(235, 0%, 0%, 0.33);
+    cursor:pointer;
+    font-size: 11px;
+    transition: .23s;
+    font-weight: 790;
+}
+.trailerBtn{
+    border: none;
+    border-radius: 5px;
+    width:80px;
+    height:26px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    color:#ff0000;
+    background: hsla(235, 0%, 0%, 0.33);
+    margin-top: 20%;
+    cursor:pointer;
+    font-size: 11px;
+    transition: .23s;
+        font-weight: 790;
+
+}
+.trailerBtn:hover,.trailerBtnUC:hover{
+    background: hsla(360, 100%, 51%, 0.33);
+        font-weight: 990;
+        color:white;
+
+}
+.watchBtn{
+    margin-top: 10px;
+    font-size: 10px;
+    border-left: 2px solid whitesmoke;
+}
+.rating{
+    color: yellow;
+    font-weight: 100;
+    font-size: 11px;
+}
+.logoImg{
+    width: 100%;
+    height: auto;
+}
+.logoDiv{
+    width:35vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.endCardDiv{
+    background:url("end.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    width: 240px;
+    height: 190px;
+}
+.genreName{
+    margin-left: 7px;
+}
+.trailerBtn:hover{
+    border-left: 2.5px solid yellow;
+}
+.watchBtn{
+    border: none;
+}
+.nameDiv{
+    width:50px;
+    height:auto;
+    word-wrap: break-word;
+}
+.rating{
+    opacity: .9;
+}
+.footerDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    position:fixed;
+}
+.navImg{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    transition:0.3s;
+    padding: 20;
+}
+.navImg:hover{
+    border-bottom: 4px solid  hsla(268, 98%, 61%, 0.95);
+    border-left: .3px solid  hsla(268, 98%, 61%, 0.95);
+    border-top: 4px solid  whitesmoke;
+    border-right: .3px solid  whitesmoke;
+    cursor:pointer;
+}
+#homeImg{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.headerDiv{
+    opacity: 0.9;
+}
+.active {
+  border-bottom: 4px solid hsla(268, 98%, 61%, 0.95); /* Example styling for an active tab */
+}
+.endCardDiv{
+    width: 240px;
+    height: 190px;
+    background: hsla(268, 100%, 61%, 0.17);
+    border-radius:10px;
+    background: url("endImg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.ucmc {
+    
+    overflow: hidden;
+    width: 180px;
+    height: 320px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.ucmImgs{
+    width:auto;
+    height:100%;
+    display: block;
+    position:center;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.trailerBtnUC{
+    margin-top: 10px;
+}
+.ucDiv,.ucDivDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+}
+.ucDivDiv{
+    align-items: space-evenly;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.movieNameTxtUC{
+    margin-top: 70%;
+    font-size: 20px;
+}
+.sectionDiv{
+    padding-bottom: 20px;
+}
+.main{
+    margin-bottom: 75px;
+}
+.lbDiv{
+    width:100vw;
+    height:auto;
+    display:flex;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.leaderBoardDiv{
+    width: 95%;
+    height: auto;
+    padding: 20px 10px;
+    background: hsla(268, 100%, 61%, 0.17);
+    border-radius: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.firstCardDivContainer,.secondCardDivContainer,.thirdCardDivContainer{
+    width:100%;
+    height:380px;
+    padding:20px 10px;
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.secondAndThirdCardDivContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
